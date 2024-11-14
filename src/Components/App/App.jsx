@@ -1,9 +1,11 @@
-import Header from "../Header/Header"
-import { CreateContext } from "../Context/CreateContext"
+import { ContextProvider, Context } from "../Context/Context";
+import Counter from "../Counter/Counter";
+
 export default function App() {
   return(
-  <CreateContext>
-    <Header/>
-  </CreateContext>
-)
+    <ContextProvider>
+      <Counter/>
+    </ContextProvider>
+  );
 }
+
